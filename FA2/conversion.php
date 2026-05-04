@@ -31,7 +31,7 @@
 
     input {
         padding: 8px;
-        width: 150px;
+        width: 200px;
     }
 
     button {
@@ -81,81 +81,82 @@ if(isset($_POST['convert'])) {
     $mm = $m * 1000;
     $km = $m / 1000;
 
-    // IMPERIAL
+    // METRIC → IMPERIAL
     $inch = $m * 39.3701;
     $ft = $m * 3.28084;
     $yd = $m * 1.09361;
     $mile = $m * 0.000621371;
 
+    // IMPERIAL → METRIC (formulas applied to computed values)
+    $inch_to_cm = $inch * 2.54;
+    $ft_to_cm = $ft * 30.48;
+    $yd_to_cm = $yd * 91.44;
+    $mile_to_km = $mile * 1.60934;
+
+    // METRIC TABLE
     echo "<table>
         <tr class='header'><td colspan='4'>METRIC CONVERSIONS</td></tr>
         <tr>
-            <td>1 centimetre</td><td>= 10 millimetres</td>
-            <td>1 cm</td><td>= 10 mm</td>
+            <td>$m metres</td><td>= " . number_format($cm,2) . " centimetres</td>
+            <td>$m m</td><td>= " . number_format($cm,2) . " cm</td>
         </tr>
         <tr>
-            <td>1 decimetre</td><td>= 10 centimetres</td>
-            <td>1 dm</td><td>= 10 cm</td>
+            <td>$m metres</td><td>= " . number_format($mm,2) . " millimetres</td>
+            <td>$m m</td><td>= " . number_format($mm,2) . " mm</td>
         </tr>
         <tr>
-            <td>1 metre</td><td>= 100 centimetres</td>
-            <td>1 m</td><td>= 100 cm</td>
-        </tr>
-        <tr>
-            <td>1 kilometre</td><td>= 1000 metres</td>
-            <td>1 km</td><td>= 1000 m</td>
+            <td>$m metres</td><td>= " . number_format($km,5) . " kilometres</td>
+            <td>$m m</td><td>= " . number_format($km,5) . " km</td>
         </tr>
     </table>";
 
+    // METRIC → IMPERIAL TABLE
     echo "<table>
-        <tr class='header'><td colspan='4'>IMPERIAL CONVERSIONS</td></tr>
+        <tr class='header'><td colspan='4'>METRIC → IMPERIAL CONVERSIONS</td></tr>
         <tr>
-            <td>1 foot</td><td>= 12 inches</td>
-            <td>1 ft</td><td>= 12 in</td>
-        </tr>
-        <tr>
-            <td>1 yard</td><td>= 3 feet</td>
-            <td>1 yd</td><td>= 3 ft</td>
-        </tr>
-        <tr>
-            <td>1 mile</td><td>= 1760 yards</td>
-            <td>1 mi</td><td>= 1760 yd</td>
-        </tr>
-    </table>";
-
-    echo "<table>
-        <tr class='header'><td colspan='4'>METRIC -> IMPERIAL CONVERSIONS</td></tr>
-        <tr>
-            <td>$m m</td><td>= " . number_format($inch,5) . " inches</td>
+            <td>$m metres</td><td>= " . number_format($inch,5) . " inches</td>
             <td>$m m</td><td>= " . number_format($inch,5) . " in</td>
         </tr>
         <tr>
-            <td>$m m</td><td>= " . number_format($yd,5) . " yards</td>
+            <td>$m metres</td><td>= " . number_format($ft,5) . " feet</td>
+            <td>$m m</td><td>= " . number_format($ft,5) . " ft</td>
+        </tr>
+        <tr>
+            <td>$m metres</td><td>= " . number_format($yd,5) . " yards</td>
             <td>$m m</td><td>= " . number_format($yd,5) . " yd</td>
         </tr>
         <tr>
-            <td>$m m</td><td>= " . number_format($mile,6) . " miles</td>
+            <td>$m metres</td><td>= " . number_format($mile,6) . " miles</td>
             <td>$m m</td><td>= " . number_format($mile,6) . " mi</td>
         </tr>
     </table>";
 
+    // IMPERIAL → METRIC TABLE (NOW FULLY DYNAMIC)
     echo "<table>
-        <tr class='header'><td colspan='4'>IMPERIAL -> METRIC CONVERSIONS</td></tr>
+        <tr class='header'><td colspan='4'>IMPERIAL → METRIC CONVERSIONS</td></tr>
         <tr>
-            <td>1 inch</td><td>= 2.54 centimetres</td>
-            <td>1 in</td><td>= 2.54 cm</td>
+            <td>" . number_format($inch,2) . " inches</td>
+            <td>= " . number_format($inch_to_cm,2) . " centimetres</td>
+            <td>" . number_format($inch,2) . " in</td>
+            <td>= " . number_format($inch_to_cm,2) . " cm</td>
         </tr>
         <tr>
-            <td>1 foot</td><td>= 30.48 centimetres</td>
-            <td>1 ft</td><td>= 30.48 cm</td>
+            <td>" . number_format($ft,2) . " feet</td>
+            <td>= " . number_format($ft_to_cm,2) . " centimetres</td>
+            <td>" . number_format($ft,2) . " ft</td>
+            <td>= " . number_format($ft_to_cm,2) . " cm</td>
         </tr>
         <tr>
-            <td>1 yard</td><td>= 91.44 centimetres</td>
-            <td>1 yd</td><td>= 91.44 cm</td>
+            <td>" . number_format($yd,2) . " yards</td>
+            <td>= " . number_format($yd_to_cm,2) . " centimetres</td>
+            <td>" . number_format($yd,2) . " yd</td>
+            <td>= " . number_format($yd_to_cm,2) . " cm</td>
         </tr>
         <tr>
-            <td>1 mile</td><td>= 1.60934 kilometres</td>
-            <td>1 mi</td><td>= 1.60934 km</td>
+            <td>" . number_format($mile,6) . " miles</td>
+            <td>= " . number_format($mile_to_km,5) . " kilometres</td>
+            <td>" . number_format($mile,6) . " mi</td>
+            <td>= " . number_format($mile_to_km,5) . " km</td>
         </tr>
     </table>";
 }
@@ -164,3 +165,4 @@ if(isset($_POST['convert'])) {
 </div>
 </body>
 </html>
+
