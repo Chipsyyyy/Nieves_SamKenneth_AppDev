@@ -82,8 +82,7 @@
         echo "<h3>Rank: $rank</h3>";
         echo "<h3>Grade: $grade</h3>";
 
-        // sample picture (you can replace)
-        echo "<img src='https://via.placeholder.com/120' alt='Student'>";
+        echo "<img src='https://www.google.com/imgres?q=hanni%20pham%20student&imgurl=https%3A%2F%2Flookaside.fbsbx.com%2Flookaside%2Fcrawler%2Fmedia%2F%3Fmedia_id%3D821848484127725&imgrefurl=https%3A%2F%2Fwww.facebook.com%2Fnewjeans4lifers%2Fposts%2Fcongrats-kay-hanni-pham-graduated-with-a-bachelor-of-science-in-being-my-bias-ma%2F821851557460751%2F&docid=0ey1kxU21YClyM&tbnid=qQ3RIOc1w4VdnM&vet=12ahUKEwisoebo2J6UAxWjklYBHTB4FBoQnPAOegQIFhAB..i&w=1080&h=1350&hcb=2&ved=2ahUKEwisoebo2J6UAxWjklYBHTB4FBoQnPAOegQIFhAB' alt='Student'>";
     }
     ?>
     </div>
