@@ -123,3 +123,225 @@ $nickname = ucfirst($nickname);
 $previousSchool = strtoupper($previousSchool);
 $program = strtoupper($program);
 ?>
+
+<div class="container">
+
+    <h2>College Student Registration Form</h2>
+
+    <table>
+        <tr>
+            <td colspan="4"><b>Registration Details</b></td>
+        </tr>
+
+        <tr>
+            <td>Student Number: <span class="line"><?php echo $studentNumber; ?></span></td>
+            <td>Date: <span class="line"><?php echo $date; ?></span></td>
+            <td colspan="2">
+                <span class="box checked"></span> New Student
+                <span class="box"></span> Transferee
+                <span class="box"></span> Returnee
+            </td>
+        </tr>
+
+        <tr>
+            <td>Entry Date: <span class="line"><?php echo $entryDate; ?></span></td>
+            <td>Entry Type: <span class="line"><?php echo $entryType; ?></span></td>
+            <td>Year Level: <span class="line"><?php echo $yearLevel; ?></span></td>
+            <td>Section: <span class="line"><?php echo $section; ?></span></td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td colspan="2" class="title">College Information</td>
+        </tr>
+
+        <tr>
+            <td>
+                College Department:
+                <span class="long-line"><?php echo $collegeDepartment; ?></span>
+            </td>
+
+            <td>
+                Semester:
+                <span class="line"><?php echo $semester; ?></span>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                Program:
+                <span class="long-line"><?php echo $program; ?></span>
+            </td>
+
+            <td>
+                School Year:
+                <span class="line"><?php echo $schoolYear; ?></span>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                Major / Specialization:
+                <span class="long-line"><?php echo $major; ?></span>
+            </td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td colspan="3" class="title">Student Information</td>
+        </tr>
+
+        <tr>
+            <td colspan="3"><b>Full Legal Name:</b></td>
+        </tr>
+
+        <tr>
+            <td>
+                <center><?php echo $lastName; ?></center>
+                <div class="small-text">Last Name</div>
+            </td>
+
+            <td>
+                <center><?php echo $firstName; ?></center>
+                <div class="small-text">First Name</div>
+            </td>
+
+            <td>
+                <center><?php echo $middleName; ?></center>
+                <div class="small-text">Middle Name</div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Nickname: <span class="line"><?php echo $nickname; ?></span></td>
+
+            <td>
+                Gender:
+                <?php
+                if ($gender == "Male") {
+                    echo "<span class='box checked'></span> Male ";
+                    echo "<span class='box'></span> Female";
+                } else {
+                    echo "<span class='box'></span> Male ";
+                    echo "<span class='box checked'></span> Female";
+                }
+                ?>
+            </td>
+
+            <td>Civil Status: <span class="line"><?php echo $civilStatus; ?></span></td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                Date of Birth:
+                <span class="line"><?php echo $birthYear; ?></span>
+                <span class="line"><?php echo $birthMonth; ?></span>
+                <span class="line"><?php echo $birthDay; ?></span>
+                <br>
+                <span class="small-text">Year</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="small-text">Month</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="small-text">Day</span>
+            </td>
+
+            <td>Place of Birth: <span class="line"><?php echo $placeOfBirth; ?></span></td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td colspan="2" class="title">Previous School Information</td>
+        </tr>
+
+        <tr>
+            <td>
+                Name of Previous School:
+                <span class="long-line"><?php echo $previousSchool; ?></span>
+            </td>
+
+            <td>
+                Last Date Attended:
+                <span class="line"><?php echo $lastDateAttended; ?></span>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                Strand / Previous Course:
+                <span class="line"><?php echo $strandCourse; ?></span>
+            </td>
+
+            <td>
+                School Address:
+                <span class="line"><?php echo $schoolAddress; ?></span>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                Reason for Enrolling / Transferring:
+                <span class="long-line"><?php echo $reasonTransfer; ?></span>
+            </td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td class="title">Health Information</td>
+            <td class="title">Emergency Contact</td>
+        </tr>
+
+        <tr>
+            <td>
+                Medical Conditions:
+                <span class="long-line"><?php echo $medicalConditions; ?></span>
+            </td>
+
+            <td>
+                Contact Person:
+                <span class="line"><?php echo $emergencyContactName; ?></span>
+                <br><br>
+
+                Contact Number:
+                <span class="line"><?php echo $emergencyContactNumber; ?></span>
+            </td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td colspan="2" class="title">Citizenship Information</td>
+        </tr>
+
+        <tr>
+            <td>
+                Birth Country:
+                <span class="line"><?php echo $birthCountry; ?></span>
+            </td>
+
+            <td>
+                Province of Birth:
+                <span class="line"><?php echo $provinceOfBirth; ?></span>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                Country of Citizenship:
+                <span class="line"><?php echo $countryCitizenship; ?></span>
+            </td>
+
+            <td>
+                Religion:
+                <span class="line"><?php echo $religion; ?></span>
+            </td>
+        </tr>
+    </table>
+
+</div>
+
+</body>
+</html>
