@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Student Registration Form</title>
+    <title>College Student Registration Form</title>
+
     <style>
         body {
             font-family: Arial;
@@ -47,7 +48,7 @@
         .long-line {
             border-bottom: 1px solid black;
             display: inline-block;
-            width: 400px;
+            width: 350px;
             text-align: center;
         }
 
