@@ -36,23 +36,32 @@
 <h2>Multiplication Table</h2>
 
 <table>
-    <?php
-    for ($row = 1; $row <= 10; $row++) {
-        echo "<tr>";
 
-        for ($col = 1; $col <= 10; $col++) {
-            $answer = $row * $col;
+<?php
 
-            if ($row % 2 == 0) {
-                echo "<td class='color1'>$answer</td>";
-            } else {
-                echo "<td class='color2'>$answer</td>";
-            }
+for ($row = 0; $row <= 10; $row++) {
+
+    echo "<tr>";
+
+    for ($col = 0; $col <= 10; $col++) {
+
+        $answer = $row * $col;
+
+        // Alternating colors
+        if (($row + $col) % 2 == 0) {
+            $color = "color1";
+        } else {
+            $color = "color2";
         }
 
-        echo "</tr>";
+        echo "<td class='$color'>$answer</td>";
     }
-    ?>
+
+    echo "</tr>";
+}
+
+?>
+
 </table>
 
 </body>
