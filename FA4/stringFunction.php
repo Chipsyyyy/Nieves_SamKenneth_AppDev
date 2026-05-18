@@ -26,7 +26,7 @@ $names = array(
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Activity 2 - PHP String Functions</title>
+    <title>PHP String Functions</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
