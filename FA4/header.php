@@ -1,7 +1,11 @@
+<?php
+define("ACTIVITY_TITLE", "PHP Predefined Functions Activity");
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
-    <title>PHP Predefined Functions Activity</title>
+    <title><?php echo ACTIVITY_TITLE; ?></title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
