@@ -3,7 +3,7 @@ require "header.php";
 include "menu.php";
 ?>
 
-<h1>Story 1: The Man Who Kept Trying</h1>
+<h1>The Man Who Kept Trying</h1>
 
 <img src="images/story1.jpg" class="story-img">
 

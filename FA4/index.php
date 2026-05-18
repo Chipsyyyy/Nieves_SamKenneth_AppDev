@@ -3,7 +3,7 @@ require "header.php";
 include "menu.php";
 ?>
 
-<h1>Activity 1: Five Short Stories</h1>
+<h1>Five Short Stories</h1>
 <p class="subtitle">Choose one story below to read.</p>
 
 <table class="story-table">
@@ -13,7 +13,7 @@ include "menu.php";
                 <div class="story-card">
                     <img src="images/story1.jpg" class="story-card-img">
                     <h3>Story 1</h3>
-                    <p>The Lost Cat</p>
+                    <p>The Man Who Kept Trying</p>
                 </div>
             </a>
         </td>
@@ -23,7 +23,7 @@ include "menu.php";
                 <div class="story-card">
                     <img src="images/story2.jpg" class="story-card-img">
                     <h3>Story 2</h3>
-                    <p>The Honest Student</p>
+                    <p>From Province to City</p>
                 </div>
             </a>
         </td>
@@ -33,7 +33,7 @@ include "menu.php";
                 <div class="story-card">
                     <img src="images/story3.jpg" class="story-card-img">
                     <h3>Story 3</h3>
-                    <p>The Small Garden</p>
+                    <p>Letting Go of a Dream</p>
                 </div>
             </a>
         </td>
@@ -43,7 +43,7 @@ include "menu.php";
                 <div class="story-card">
                     <img src="images/story4.jpg" class="story-card-img">
                     <h3>Story 4</h3>
-                    <p>The Rainy Day</p>
+                    <p>Chipsy, My Forever Friend</p>
                 </div>
             </a>
         </td>
@@ -53,7 +53,7 @@ include "menu.php";
                 <div class="story-card">
                     <img src="images/story5.jpg" class="story-card-img">
                     <h3>Story 5</h3>
-                    <p>The Brave Boy</p>
+                    <p>The Quiet Pressure</p>
                 </div>
             </a>
         </td>

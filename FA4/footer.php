@@ -1,5 +1,5 @@
 <div class="footer">
-    <p>Created for PHP Predefined Functions Activity</p>
+    <p>Created by Sam na ayaw nang mag aral</p>
 </div>
 
 </div>
