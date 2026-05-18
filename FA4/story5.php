@@ -3,31 +3,38 @@ require "header.php";
 include "menu.php";
 ?>
 
-<h1>The Quiet Pressure</h1>
+<h1>Story 5: The Quiet Pressure</h1>
 
 <img src="images/story5.jpg" class="story-img">
 
 <p>
-    People often saw Sam as someone creative, calm, and good with technology,
-    but they did not always see the pressure he carried every day. As a student
-    living far from the province and studying in the city, he constantly felt the
-    need to prove that all the sacrifices, struggles, and hard work would someday
-    be worth it.
+    Sam’s parents never pressured him to become perfect. They never demanded high
+    grades or forced him to become someone he did not want to be. Instead, they
+    supported him quietly and trusted him to do his best.
 </p>
 
 <p>
-    There were nights when deadlines, projects, and expectations became too heavy.
-    Sam would stare at his screen for hours, overthinking his future and questioning
-    if he was really good enough. Sometimes he compared himself to other people who
-    seemed more successful, more talented, and more confident than him.
+    But even without pressure from other people, Sam still felt a heavy pressure
+    inside himself. Moving from the province to Manila, studying far from home,
+    and seeing the sacrifices his family made for his education made him feel like
+    failure was never an option. He felt that he needed to succeed, not because
+    people forced him to, but because he did not want to disappoint the people
+    who believed in him.
 </p>
 
 <p>
-    Even though he rarely talked about these feelings, he continued moving forward.
-    He kept learning how to code, creating systems, and improving himself little by
-    little. Deep inside, Sam knew that growth does not always happen loudly. Sometimes,
-    it happens quietly — through surviving difficult days, continuing despite fear,
-    and refusing to completely give up on himself.
+    There were nights when Sam overthought everything — his future, his skills,
+    and whether he was doing enough. Sometimes he became too hard on himself,
+    feeling guilty whenever he rested or made mistakes. Even simple failures felt
+    bigger because deep inside, he carried the silent fear of wasting the opportunities
+    given to him.
+</p>
+
+<p>
+    Still, Sam continued moving forward little by little. He learned that pressure
+    does not always come from strict parents or other people. Sometimes, the strongest
+    pressure comes from yourself — from wanting to succeed so badly because you know
+    how much people sacrificed just to help you reach your dreams.
 </p>
 
 <?php
