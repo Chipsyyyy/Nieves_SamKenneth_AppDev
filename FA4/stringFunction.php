@@ -33,7 +33,7 @@ $names = array(
 
 <div class="container">
 
-    <h1>Activity 2: PHP String Functions</h1>
+    <h1>PHP String Functions</h1>
     <p class="subtitle">This table uses different PHP string functions.</p>
 
     <table class="string-table">
