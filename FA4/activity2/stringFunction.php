@@ -1,25 +1,25 @@
 <?php
 $names = array(
-    "chrisa",
-    "ana marie",
-    "ben cruz",
-    "carla santos",
-    "daniel reyes",
-    "ella garcia",
-    "francis lopez",
-    "grace bautista",
-    "hannah flores",
-    "ivan dela cruz",
-    "julia ramos",
-    "kevin salazar",
-    "lara cruz",
-    "marco diaz",
-    "nina roque",
-    "oliver tan",
-    "paula lim",
-    "queen santos",
-    "rafael torres",
-    "sophia yu"
+    "arnel agpoon",
+    "gillian dela cruz",
+    "lalyn galileo",
+    "francine riel",
+    "jhanel jose",
+    "maria anque",
+    "railey reyes",
+    "fritz marquez",
+    "jayvee pascual",
+    "cedrik docusin",
+    "fiona rivas",
+    "ann esquivias",
+    "tine sarzuelo",
+    "raf sarte",
+    "eli resio",
+    "maria rowena",
+    "rudy peralta",
+    "miguel garcia",
+    "karl francisco",
+    "inigo frayna"
 );
 ?>
 
@@ -33,7 +33,7 @@ $names = array(
 
 <div class="container">
 
-    <h1>PHP String Functions</h1>
+    <h1>Activity 2: PHP String Functions</h1>
     <p class="subtitle">This table uses different PHP string functions.</p>
 
     <table class="string-table">
@@ -53,6 +53,7 @@ $names = array(
         <?php
         foreach ($names as $name) {
             $characters = strlen($name);
+
             $uppercaseFirst = ucfirst($name);
 
             $replaceVowels = str_replace(
