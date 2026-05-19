@@ -1,43 +1,29 @@
-<?php
-require "../header.php";
+<?php require "header.php"; ?>
+<?php include "menu.php"; ?>
 
-$skills = array(
-    "Basic PHP Programming",
-    "HTML and CSS",
-    "Problem Solving",
-    "Team Collaboration",
-    "Basic Web Design",
-    "Communication Skills"
-);
-?>
+<div class="content-box">
+    <h2>Skills</h2>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Skills</title>
-    <link rel="stylesheet" href="activity3.css">
-</head>
-<body>
+    <?php
+    $skills = array(
+        "Basic PHP Programming",
+        "HTML and CSS",
+        "Problem Solving",
+        "Teamwork",
+        "Basic Web Design",
+        "Communication Skills"
+    );
+    ?>
 
-<div class="page-wrapper">
+    <ul>
+        <?php
+        foreach ($skills as $skill) {
+            echo "<li>" . $skill . "</li>";
+        }
+        ?>
+    </ul>
 
-    <?php include "../nav.php"; ?>
-
-    <div class="resume-page">
-        <h1>Skills</h1>
-
-        <div class="skills-grid">
-            <?php
-            foreach ($skills as $skill) {
-                echo "<div class='skill-item'>" . $skill . "</div>";
-            }
-            ?>
-        </div>
-    </div>
-
-    <?php include "../footer.php"; ?>
-
+    <a href="index.php" class="back-link">Back to Resume</a>
 </div>
 
-</body>
-</html>
+<?php include "footer.php"; ?>

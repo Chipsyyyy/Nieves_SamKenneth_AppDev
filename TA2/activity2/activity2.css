@@ -4,218 +4,55 @@
 
 body {
     margin: 0;
-    font-family: "Segoe UI", Arial, sans-serif;
-    background-color: #f4f7fb;
-    color: #1f2937;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    color: #111;
 }
 
-.page-wrapper {
-    width: 92%;
-    max-width: 1250px;
-    margin: 30px auto;
-    animation: fadeIn 0.5s ease-in-out;
+.container {
+    width: 85%;
+    max-width: 950px;
+    margin: 35px auto;
+    background-color: white;
+    padding: 25px;
+    border: 1px solid #111;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #1e1b4b;
-    color: white;
-    padding: 18px 24px;
-    border-radius: 16px;
-    margin-bottom: 28px;
-    box-shadow: 0 10px 24px rgba(30, 27, 75, 0.18);
-}
-
-.brand {
-    font-size: 18px;
-    font-weight: 700;
-}
-
-.nav-links {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-    padding: 9px 13px;
-    border-radius: 8px;
-    transition: 0.2s;
-}
-
-.nav-links a:hover {
-    background: #3730a3;
-}
-
-.section-header {
-    background: white;
-    border-radius: 20px;
-    padding: 32px;
-    margin-bottom: 24px;
-    border: 1px solid #e5e7eb;
-    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06);
+h1 {
     text-align: center;
+    color: #111;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
 }
 
-.eyebrow {
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 13px;
-    font-weight: 700;
-    color: #4f46e5;
-    margin-bottom: 6px;
-}
-
-.section-header h1 {
-    margin: 5px 0;
-    font-size: 36px;
-    color: #0f172a;
-}
-
-.section-header p {
-    color: #64748b;
-}
-
-.shape-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 18px;
-    margin-bottom: 26px;
-}
-
-.shape-card {
-    background: white;
-    border-radius: 18px;
-    padding: 22px;
-    border: 1px solid #e5e7eb;
-    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
-    transition: 0.25s;
-}
-
-.shape-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 14px 28px rgba(15, 23, 42, 0.14);
-}
-
-.shape-label {
-    display: inline-block;
-    background: #eef2ff;
-    color: #4338ca;
-    padding: 7px 10px;
-    border-radius: 999px;
-    font-size: 13px;
-    font-weight: 700;
-    margin-bottom: 12px;
-}
-
-.shape-card h2 {
-    font-size: 19px;
-    margin: 8px 0;
-    color: #111827;
-}
-
-.shape-card p {
-    color: #64748b;
-    line-height: 1.5;
-}
-
-.answer-box {
-    margin-top: 18px;
-    padding: 15px;
-    background: #f8fafc;
-    border-radius: 14px;
-    border-left: 4px solid #4f46e5;
-}
-
-.answer-box small {
-    display: block;
-    color: #64748b;
-    margin-bottom: 4px;
-}
-
-.answer-box strong {
-    font-size: 24px;
-    color: #1e1b4b;
-}
-
-.table-card {
-    background: white;
-    padding: 22px;
-    border-radius: 18px;
-    border: 1px solid #e5e7eb;
-    box-shadow: 0 8px 22px rgba(15, 23, 42, 0.08);
-}
-
-.table-card h2 {
-    margin-top: 0;
-    color: #111827;
+.subtitle {
+    text-align: center;
+    color: #555;
+    margin-bottom: 25px;
+    font-size: 14px;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    overflow: hidden;
-    border-radius: 12px;
+    text-align: center;
 }
 
 th {
-    background: #1e1b4b;
+    background-color: #111;
     color: white;
-    padding: 14px;
+    padding: 12px;
+    border: 1px solid #111;
+    text-transform: uppercase;
     font-size: 14px;
 }
 
 td {
-    padding: 14px;
-    text-align: center;
-    border-bottom: 1px solid #e5e7eb;
-    color: #334155;
+    border: 1px solid #111;
+    padding: 12px;
+    font-size: 14px;
 }
 
 tr:nth-child(even) {
-    background: #f8fafc;
-}
-
-.footer {
-    margin-top: 30px;
-    text-align: center;
-    padding: 18px;
-    border-radius: 14px;
-    background: white;
-    color: #64748b;
-    border: 1px solid #e5e7eb;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(12px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    .shape-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .navbar {
-        flex-direction: column;
-        gap: 15px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .shape-grid {
-        grid-template-columns: 1fr;
-    }
+    background-color: #f1f1f1;
 }

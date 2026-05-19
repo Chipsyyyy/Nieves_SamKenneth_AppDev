@@ -1,36 +1,16 @@
-<?php
-require "../header.php";
-?>
+<?php require "header.php"; ?>
+<?php include "menu.php"; ?>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Affiliation</title>
-    <link rel="stylesheet" href="activity3.css">
-</head>
-<body>
+<div class="content-box">
+    <h2>Affiliation</h2>
 
-<div class="page-wrapper">
+    <ul>
+        <li>Member of IT Student Organization</li>
+        <li>Participant in school seminars and activities</li>
+        <li>Member of class project groups</li>
+    </ul>
 
-    <?php include "../nav.php"; ?>
-
-    <div class="resume-page">
-        <h1>Affiliation</h1>
-
-        <div class="info-card">
-            <h2>Student Organization</h2>
-            <p>Member of a school-related academic group focused on teamwork and student activities.</p>
-        </div>
-
-        <div class="info-card">
-            <h2>Class Project Team</h2>
-            <p>Participated in group activities involving research, presentation, and web development tasks.</p>
-        </div>
-    </div>
-
-    <?php include "../footer.php"; ?>
-
+    <a href="index.php" class="back-link">Back to Resume</a>
 </div>
 
-</body>
-</html>
+<?php include "footer.php"; ?>
