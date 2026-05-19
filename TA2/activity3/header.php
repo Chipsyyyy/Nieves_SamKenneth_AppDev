@@ -8,5 +8,4 @@
 
 <header>
     <h1>Student Resume</h1>
-    <p>Using PHP include() and require()</p>
 </header>
