@@ -101,3 +101,17 @@ button:hover, .btn:hover {
         grid-template-columns: 1fr;
     }
 }
+
+.color-card {
+    padding: 20px;
+    border: 2px solid #111111;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    background: #f7f7f7;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.color-card:hover {
+    transform: scale(1.02);
+}
