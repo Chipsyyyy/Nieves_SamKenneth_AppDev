@@ -1,5 +1,4 @@
 <?php
-// db.php - Database connection (MySQLi Procedural)
 
 $servername = "localhost";
 $username   = "root";
