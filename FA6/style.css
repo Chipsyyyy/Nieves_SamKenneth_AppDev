@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background: #f4f1ec;
+    margin: 0;
+    padding: 40px 20px;
+    color: #3b2f2f;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 30px 35px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+h1 {
+    text-align: center;
+    color: #6b4226;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #8a8a8a;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+label {
+    display: block;
+    margin-top: 14px;
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #4a3b3b;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #d8d0c5;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #b9804f;
+}
+
+button {
+    margin-top: 22px;
+    width: 100%;
+    padding: 12px;
+    background: #6b4226;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #543219;
+}
+
+.message {
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.success {
+    background: #e3f3e1;
+    color: #2c6b2f;
+}
+
+.error {
+    background: #fbe3e3;
+    color: #a33a3a;
+}
+
+.nav-link {
+    display: block;
+    text-align: center;
+    margin-top: 18px;
+    color: #6b4226;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Table styles for DogView.php */
+.table-container {
+    max-width: 950px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #e0d8cb;
+    padding: 10px 12px;
+    text-align: left;
+    font-size: 14px;
+}
+
+th {
+    background: #6b4226;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background: #faf7f2;
+}
